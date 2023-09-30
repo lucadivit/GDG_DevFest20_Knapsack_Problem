@@ -10,10 +10,7 @@ git clone https://github.com/lucadivit/GDG_DevFest20_Knapsack_Problem
 ## Installation
 You need python3 interpreter and you need to install these libraries:
 ```
-pip3 install deap
-pip3 install numpy
-pip3 install matplotlib
-pip3 install seaborn
+pip install -r requirements.txt
 ```
 
 ## Run
