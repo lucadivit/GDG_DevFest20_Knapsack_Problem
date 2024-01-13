@@ -1,9 +1,13 @@
 from knapsack import Knapsack01Problem
 from deap import base, tools, creator, algorithms
-import random
+import random, time
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+seed = str(time.time()).replace(".", "")[8:]
+seed = 11888291 # int(seed)
+random.seed(seed)
 
 #This callback function returns the value of the knapsack
 def knapsackValue(individual):
@@ -69,3 +73,4 @@ plt.xlabel('Generation')
 plt.ylabel('Max / Average Fitness')
 plt.title('Max and Average fitness over Generations')
 plt.show()
+print(seed)
